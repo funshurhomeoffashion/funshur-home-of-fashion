@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Funshur Home of Fashion — premium African fashion, bespoke tailoring and wedding outfits.">
+<title>Funshur Home of Fashion | Premium African Fashion</title>
+<style>
+:root{--ink:#111;--cream:#f5f0e8;--gold:#c7a45b;--muted:#777;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(17,17,17,.96);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;gap:20px}
+.logo{font-family:Georgia,serif;font-size:1.15rem;letter-spacing:1.5px}.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:25px;font-size:.9rem}.navlinks a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#111;padding:13px 22px;border-radius:2px;font-weight:700;border:1px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-2px);background:#d5b66f}
+.btn.dark{background:#111;color:#fff;border-color:#111}
+.hero{min-height:100vh;background:linear-gradient(90deg,rgba(0,0,0,.83),rgba(0,0,0,.35)),url("images/hero.jpg") center/cover;display:flex;align-items:center;color:#fff;padding:130px 7% 80px}
+.hero-content{max-width:720px}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:.78rem;margin-bottom:18px}
+h1{font-family:Georgia,serif;font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin-bottom:25px}.hero p{font-size:1.12rem;max-width:600px;color:#eee;margin-bottom:30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:90px 7%}.intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.kicker{color:#987638;font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;margin-bottom:12px}
+h2{font:normal clamp(2.1rem,4vw,3.5rem)/1.05 Georgia,serif;margin-bottom:18px}.intro p{color:#555;max-width:620px}.signature{margin-top:25px;font-family:Georgia,serif;font-size:1.2rem}
+.cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;padding:28px;border:1px solid #e5ddd0}.card h3{font-family:Georgia,serif;font-size:1.35rem;margin:12px 0 8px}.card p{color:#666;font-size:.94rem}
+.darksection{background:#111;color:#fff}.darksection p{color:#bbb}.darksection .kicker{color:var(--gold)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:360px;object-fit:cover;background:#ddd}
+.cta{background:#c7a45b;text-align:center}.cta h2{max-width:800px;margin:0 auto 18px}.cta p{max-width:650px;margin:0 auto 25px;color:#2a251b}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contactbox{background:#fff;padding:30px}.contactbox p{margin:10px 0;color:#555}.contactbox strong{color:#111}
+form{display:grid;gap:13px}input,select,textarea{width:100%;padding:14px;border:1px solid #ddd;background:#fff;font:inherit}textarea{min-height:130px}
+footer{background:#0a0a0a;color:#bbb;padding:45px 7%;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}footer strong{color:#fff;font-family:Georgia,serif}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:700;z-index:9;box-shadow:0 8px 25px #0003}
+@media(max-width:800px){.navlinks{display:none}.intro,.contact{grid-template-columns:1fr}.cardgrid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:260px}section{padding:65px 6%}.hero{padding-left:6%;padding-right:6%}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#">FUNSHUR <span>HOME OF FASHION</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#collections">Collections</a><a href="#portfolio">Portfolio</a><a href="#book">Book</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Welcome to Funshur Home of Fashion</div>
+    <h1>Style made personal.</h1>
+    <p>Premium African fashion, thoughtfully designed and expertly tailored for men who want to look exceptional — from everyday native wear to unforgettable wedding moments.</p>
+    <div class="actions">
+      <a class="btn" href="#book">Book an Outfit</a>
+      <a class="btn dark" href="#portfolio">View Our Work</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="intro">
+  <div>
+    <div class="kicker">The House</div>
+    <h2>Where craftsmanship meets confidence.</h2>
+    <p>Funshur Home of Fashion is a fashion house focused on creating refined, well-fitted African outfits with attention to detail. Every piece is made to represent the man wearing it — his occasion, personality and presence.</p>
+    <div class="signature">— Funshur Home of Fashion</div>
+  </div>
+  <div>
+    <div class="card"><div class="kicker">Our Promise</div><h3>Designed for your moment.</h3><p>Whether you're preparing for a wedding, celebration, photoshoot or simply upgrading your wardrobe, we bring your idea to life with a personal fitting and tailored finish.</p></div>
+  </div>
+</section>
+
+<section id="collections" class="darksection">
+  <div class="kicker">Our Collections</div><h2>Made for every important appearance.</h2>
+  <div class="cardgrid">
+    <div class="card"><div class="kicker">01</div><h3>Agbada & Grand Looks</h3><p>Statement silhouettes for weddings, ceremonies and occasions where presence matters.</p></div>
+    <div class="card"><div class="kicker">02</div><h3>Senator & Native Wear</h3><p>Clean, sophisticated native styles tailored around your measurements and preferred finish.</p></div>
+    <div class="card"><div class="kicker">03</div><h3>Wedding & Aso-Ebi</h3><p>Coordinated looks for grooms, couples, families and wedding parties.</p></div>
+    <div class="card"><div class="kicker">04</div><h3>Custom Designs</h3><p>Bring a reference, an idea or a fabric — we'll develop the look with you.</p></div>
+    <div class="card"><div class="kicker">05</div><h3>Jalabiya</h3><p>Elegant, comfortable silhouettes with a polished traditional finish.</p></div>
+    <div class="card"><div class="kicker">06</div><h3>Contemporary African</h3><p>Modern cuts and styling for clients who want tradition with a fresh edge.</p></div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="kicker">Selected Work</div><h2>Your gallery starts here.</h2>
+  <p style="color:#666;margin-bottom:28px">Replace these four placeholders with your best Funshur outfit photos. More images can be added as your portfolio grows.</p>
+  <div class="gallery">
+    <img src="images/look-1.jpg" alt="Funshur Home of Fashion look 1">
+    <img src="images/look-2.jpg" alt="Funshur Home of Fashion look 2">
+    <img src="images/look-3.jpg" alt="Funshur Home of Fashion look 3">
+    <img src="images/look-4.jpg" alt="Funshur Home of Fashion look 4">
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Have a look in mind? Let's make it yours.</h2>
+  <p>Tell us what you're dressing for, your preferred style and when you need it. We'll guide you from idea to finished outfit.</p>
+  <a class="btn dark" href="#book">Start Your Booking</a>
+</section>
+
+<section id="book">
+  <div class="kicker">Bookings & Orders</div><h2>Let's create your next look.</h2>
+  <div class="contact">
+    <div class="contactbox">
+      <h3>What happens next?</h3>
+      <p><strong>1. Tell us your need.</strong><br>Choose a wedding, native outfit, custom design or another request.</p>
+      <p><strong>2. We discuss the details.</strong><br>We'll confirm fabric, style, measurements, budget and delivery timeline.</p>
+      <p><strong>3. Your outfit is made.</strong><br>Your look is tailored and prepared for your big moment.</p>
+    </div>
+    <div class="contactbox">
+      <form onsubmit="sendBooking(event)">
+        <input id="name" required placeholder="Your name">
+        <input id="phone" required placeholder="Phone / WhatsApp number">
+        <select id="service" required><option value="">What do you need?</option><option>Agbada</option><option>Senator / Native Wear</option><option>Wedding / Aso-Ebi</option><option>Jalabiya</option><option>Custom Design</option><option>Other</option></select>
+        <textarea id="details" placeholder="Tell us about the outfit, event date, fabric, or any reference you have."></textarea>
+        <button class="btn" type="submit">Send Booking Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="darksection">
+  <div class="kicker">Contact</div><h2>Let's talk fashion.</h2>
+  <p style="margin-bottom:20px">Replace the placeholders below with your official business details before publishing.</p>
+  <p><strong>WhatsApp:</strong> +234 XXX XXX XXXX</p>
+  <p><strong>Phone:</strong> +234 XXX XXX XXXX</p>
+  <p><strong>Instagram:</strong> @funshurhomeoffashion</p>
+  <p><strong>TikTok:</strong> @funshurhomeoffashion</p>
+</section>
+
+<footer>
+  <div><strong>FUNSHUR HOME OF FASHION</strong><br>Premium African fashion. Tailored with excellence.</div>
+  <div>© 2026 Funshur Home of Fashion. All rights reserved.</div>
+</footer>
+
+<a class="whatsapp" href="#" onclick="openWhatsApp(event)">WhatsApp</a>
+<script>
+function sendBooking(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value;
+  const phone=document.getElementById('phone').value;
+  const service=document.getElementById('service').value;
+  const details=document.getElementById('details').value;
+  const number='234XXXXXXXXXX'; // Replace with your WhatsApp number, digits only.
+  const msg=`Hello Funshur Home of Fashion,%0A%0AMy name is ${encodeURIComponent(name)}.%0AWhatsApp/Phone: ${encodeURIComponent(phone)}%0AI need: ${encodeURIComponent(service)}%0ADetails: ${encodeURIComponent(details)}`;
+  window.open(`https://wa.me/${number}?text=${msg}`,'_blank');
+}
+function openWhatsApp(e){
+  e.preventDefault();
+  const number='234XXXXXXXXXX'; // Replace with your WhatsApp number, digits only.
+  window.open(`https://wa.me/${number}`,'_blank');
+}
+</script>
+</body>
+</html>
