@@ -16,7 +16,17 @@ a{text-decoration:none;color:inherit}
 .navlinks{display:flex;gap:25px;font-size:.9rem}.navlinks a:hover{color:var(--gold)}
 .btn{display:inline-block;background:var(--gold);color:#111;padding:13px 22px;border-radius:2px;font-weight:700;border:1px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-2px);background:#d5b66f}
 .btn.dark{background:#111;color:#fff;border-color:#111}
-.hero{min-height:100vh;background:linear-gradient(90deg,rgba(0,0,0,.83),rgba(0,0,0,.35)),url("IMG_7891.jpeg") center/cover;display:flex;align-items:center;color:#fff;padding:130px 7% 80px}
+.hero{
+  min-height:100vh;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.15)),
+    url("IMG_7891.jpeg") center/cover no-repeat;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  color:#fff;
+  padding:130px 7% 80px;
+}
 .hero-content{max-width:720px}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:.78rem;margin-bottom:18px}
 h1{font-family:Georgia,serif;font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin-bottom:25px}.hero p{font-size:1.12rem;max-width:600px;color:#eee;margin-bottom:30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
 section{padding:90px 7%}.intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.kicker{color:#987638;font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;margin-bottom:12px}
