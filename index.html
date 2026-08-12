@@ -128,13 +128,123 @@ section{padding:90px 7%}.intro{display:grid;grid-template-columns:1fr 1fr;gap:70
 h2{font:normal clamp(2.1rem,4vw,3.5rem)/1.05 Georgia,serif;margin-bottom:18px}.intro p{color:#555;max-width:620px}.signature{margin-top:25px;font-family:Georgia,serif;font-size:1.2rem}
 .cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;padding:28px;border:1px solid #e5ddd0}.card h3{font-family:Georgia,serif;font-size:1.35rem;margin:12px 0 8px}.card p{color:#666;font-size:.94rem}
 .darksection{background:#111;color:#fff}.darksection p{color:#bbb}.darksection .kicker{color:var(--gold)}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:360px;object-fit:cover;background:#ddd}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:28px 18px;
+}
+
+.collection-card{
+  display:block;
+  position:relative;
+  color:var(--ink);
+}
+
+.collection-title{
+  font-family:Georgia,serif;
+  font-size:1.15rem;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.collection-card img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  display:block;
+  background:#ddd;
+}
+
+.collection-overlay{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:35px 18px 16px;
+  background:linear-gradient(transparent,rgba(0,0,0,.75));
+  color:#fff;
+  opacity:0;
+  transition:.25s;
+}
+
+.collection-card:hover .collection-overlay{
+  opacity:1;
+}
+
+.collection-overlay p{
+  margin:0;
+  color:#fff;
+  font-weight:700;
+  font-size:.85rem;
+  letter-spacing:1px;
+}
+
+@media(max-width:800px){
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+    gap:24px 12px;
+  }
+
+  .collection-title{
+    font-size:.95rem;
+  }
+
+  .collection-card img{
+    height:260px;
+  }
+
+  .collection-overlay{
+    opacity:1;
+    padding:30px 10px 10px;
+  }
+
+  .collection-overlay p{
+    font-size:.7rem;
+  }
+}
 .cta{background:#c7a45b;text-align:center}.cta h2{max-width:800px;margin:0 auto 18px}.cta p{max-width:650px;margin:0 auto 25px;color:#2a251b}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contactbox{background:#fff;padding:30px}.contactbox p{margin:10px 0;color:#555}.contactbox strong{color:#111}
 form{display:grid;gap:13px}input,select,textarea{width:100%;padding:14px;border:1px solid #ddd;background:#fff;font:inherit}textarea{min-height:130px}
 footer{background:#0a0a0a;color:#bbb;padding:45px 7%;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}footer strong{color:#fff;font-family:Georgia,serif}
 .whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:700;z-index:9;box-shadow:0 8px 25px #0003}
 @media(max-width:800px){.navlinks{display:none}.intro,.contact{grid-template-columns:1fr}.cardgrid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:260px}section{padding:65px 6%}.hero{padding-left:6%;padding-right:6%}}
+.fashion-collection{
+  background:#fff;
+  padding:80px 7%;
+  border-top:1px solid #e5ddd0;
+}
+
+.fashion-collection h2{
+  margin-bottom:30px;
+}
+
+.collection-gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.collection-gallery img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  display:block;
+}
+
+@media(max-width:800px){
+  .fashion-collection{
+    padding:60px 6%;
+  }
+
+  .collection-gallery{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
+  .collection-gallery img{
+    height:260px;
+  }
+}
 </style>
 </head>
 <body>
@@ -163,45 +273,78 @@ footer{background:#0a0a0a;color:#bbb;padding:45px 7%;display:flex;justify-conten
 </header>
 
 <section id="about" class="intro">
-  <section class="why-funshur">
+
+  <div>
+    <div class="kicker">The House</div>
+    <h2>Where craftsmanship meets confidence.</h2>
+    <p>
+      Funshur Home of Fashion is a fashion house focused on creating
+      refined, well-fitted African outfits with attention to detail.
+      Every piece is made to represent the man wearing it — his
+      occasion, personality and presence.
+    </p>
+    <div class="signature">Funshur Home of Fashion</div>
+  </div>
+
+  <div>
+    <div class="card">
+      <div class="kicker">Our Promise</div>
+      <h3>Designed for your moment.</h3>
+      <p>
+        Whether you're preparing for a wedding, celebration, photoshoot
+        or simply upgrading your wardrobe, we bring your idea to life
+        with a personal fitting and tailored finish.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section class="why-funshur">
+
   <div class="kicker">Why Choose Funshur</div>
   <h2>Made for your moment.</h2>
 
   <div class="why-grid">
+
     <div class="why-card">
       <div class="why-number">01</div>
       <h3>Bespoke Craftsmanship</h3>
-      <p>Every piece is carefully designed and made to reflect your personality and style.</p>
+      <p>
+        Every piece is carefully designed and made to reflect your
+        personality and style.
+      </p>
     </div>
 
     <div class="why-card">
       <div class="why-number">02</div>
       <h3>Perfect Fit</h3>
-      <p>We pay attention to the details that give your outfit a clean, confident and comfortable fit.</p>
+      <p>
+        We pay attention to the details that give your outfit a clean,
+        confident and comfortable fit.
+      </p>
     </div>
 
     <div class="why-card">
       <div class="why-number">03</div>
       <h3>Wedding & Event Specialists</h3>
-      <p>From grooms and wedding parties to special occasions, we create looks made to stand out.</p>
+      <p>
+        From grooms and wedding parties to special occasions, we create
+        looks made to stand out.
+      </p>
     </div>
 
     <div class="why-card">
       <div class="why-number">04</div>
       <h3>Your Vision, Our Craft</h3>
-      <p>Bring us your idea, reference or inspiration and we'll turn it into something uniquely yours.</p>
+      <p>
+        Bring us your idea, reference or inspiration and we'll turn it
+        into something uniquely yours.
+      </p>
     </div>
+
   </div>
-</section>
-  <div>
-    <div class="kicker">The House</div>
-    <h2>Where craftsmanship meets confidence.</h2>
-    <p>Funshur Home of Fashion is a fashion house focused on creating refined, well-fitted African outfits with attention to detail. Every piece is made to represent the man wearing it — his occasion, personality and presence.</p>
-    <div class="signature">Funshur Home of Fashion</div>
-  </div>
-  <div>
-    <div class="card"><div class="kicker">Our Promise</div><h3>Designed for your moment.</h3><p>Whether you're preparing for a wedding, celebration, photoshoot or simply upgrading your wardrobe, we bring your idea to life with a personal fitting and tailored finish.</p></div>
-  </div>
+
 </section>
 
 <section id="collections" class="darksection">
@@ -218,6 +361,75 @@ footer{background:#0a0a0a;color:#bbb;padding:45px 7%;display:flex;justify-conten
 
 <section id="portfolio">
   <div class="gallery">
+   ...
+</div>
+</section>
+  
+<section id="collection-agbada" class="fashion-collection">
+  <div class="kicker">Agbada & Grand Looks</div>
+  <h2>Agbada Collection</h2>
+  <div class="collection-gallery">
+    <img src="IMG_7901.jpeg" alt="Agbada outfit">
+  </div>
+</section>
+
+<section id="collection-wedding" class="fashion-collection">
+  <div class="kicker">Wedding & Groom</div>
+  <h2>Wedding Collection</h2>
+  <div class="collection-gallery">
+    <img src="IMG_7896.jpeg" alt="Wedding outfit">
+  </div>
+</section>
+
+<section id="collection-native" class="fashion-collection">
+  <div class="kicker">Senator & Native Wear</div>
+  <h2>Native Collection</h2>
+  <div class="collection-gallery">
+    <img src="IMG_3121.jpeg" alt="Native outfit">
+  </div>
+</section>
+
+<section id="collection-jalabiya" class="fashion-collection">
+  <div class="kicker">Jalabiya</div>
+  <h2>Jalabiya Collection</h2>
+  <div class="collection-gallery">
+    <img src="IMG_6025.png" alt="Jalabiya outfit">
+  </div>
+</section>
+
+<section id="collection-asobi" class="fashion-collection">
+  <div class="kicker">Aso-Ebi</div>
+  <h2>Aso-Ebi Collection</h2>
+  <div class="collection-gallery">
+    <img src="IMG_6027.png" alt="Aso-Ebi outfit">
+  </div>
+</section>
+
+<section id="collection-custom" class="fashion-collection">
+  <div class="kicker">Custom Designs</div>
+  <h2>Custom Collection</h2>
+  <div class="collection-gallery">
+    <img src="IMG_7891.jpeg" alt="Custom design">
+  </div>
+</section>
+
+<section id="collection-contemporary" class="fashion-collection">
+  <div class="kicker">Contemporary African</div>
+  <h2>Contemporary Collection</h2>
+  <div class="collection-gallery">
+    <img src="DA87344F-30D1-4BC4-A6C3-6D5A26AB07B2.jpeg" alt="Contemporary African outfit">
+  </div>
+</section>
+
+<section id="collection-special" class="fashion-collection">
+  <div class="kicker">Special Looks</div>
+  <h2>Special Collection</h2>
+  <div class="collection-gallery">
+    <img src="0bd2951b-8d63-4036-9c7f-83946fc337f7.jpeg" alt="Special fashion look">
+  </div>
+</section>
+
+<section class="cta">
 
   <a class="collection-card" href="#collection-agbada">
     <div class="collection-title">Agbada & Grand Looks</div>
