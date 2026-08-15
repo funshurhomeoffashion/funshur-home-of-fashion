@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Kids | Funshur Home of Fashion</title>
+
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
+      background:#111;
+      color:#fff;
+    }
+
+    header{
+      padding:25px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .logo{
+      font-size:20px;
+      font-weight:bold;
+      letter-spacing:1px;
+    }
+
+    .back{
+      color:#fff;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .hero{
+      padding:80px 7% 50px;
+      text-align:center;
+    }
+
+    .kicker{
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:12px;
+      opacity:.65;
+      margin-bottom:15px;
+    }
+
+    h1{
+      font-size:clamp(38px,6vw,70px);
+      margin-bottom:18px;
+    }
+
+    .intro{
+      max-width:650px;
+      margin:auto;
+      line-height:1.7;
+      color:#ccc;
+    }
+
+    .gallery{
+      width:86%;
+      max-width:1200px;
+      margin:30px auto 80px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:430px;
+      object-fit:cover;
+      display:block;
+      border-radius:4px;
+    }
+
+    .collection-cta{
+      text-align:center;
+      padding:70px 7%;
+      background:#181818;
+    }
+
+    .collection-cta h2{
+      font-size:34px;
+      margin-bottom:15px;
+    }
+
+    .collection-cta p{
+      color:#ccc;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 24px;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:3px;
+    }
+
+    @media(max-width:800px){
+      .gallery{
+        grid-template-columns:repeat(2,1fr);
+        width:92%;
+      }
+
+      .gallery img{
+        height:330px;
+      }
+    }
+
+    @media(max-width:520px){
+      header{
+        padding:20px 5%;
+      }
+
+      .hero{
+        padding:60px 5% 35px;
+      }
+
+      .gallery{
+        grid-template-columns:1fr;
+        width:92%;
+      }
+
+      .gallery img{
+        height:auto;
+        aspect-ratio:4/5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">FUNSHUR HOME OF FASHION</div>
+  <a href="index.html" class="back">← Back to Home</a>
+</header>
+
+<section class="hero">
+  <div class="kicker">Our Collection</div>
+
+  <h1>Kids</h1>
+
+  <p class="intro">
+    Smart, stylish and comfortable African outfits designed especially
+    for little ones and special occasions.
+  </p>
+</section>
+
+<section class="gallery">
+
+  <img src="kid1.jpg" alt="Funshur Kids">
+  <img src="kids2.jpg" alt="Funshur Kids">
+  <img src="kids3.jpg" alt="Funshur Kids">
+  <img src="kids4.jpg" alt="Funshur Kids">
+  <img src="kids5.jpg" alt="Funshur Kids">
+  <img src="kids6.jpg" alt="Funshur Kids">
+  <img src="kids7.jpg" alt="Funshur Kids">
+  <img src="kids8.jpg" alt="Funshur Kids">
+
+</section>
+
+<section class="collection-cta">
+
+  <h2>Love this look?</h2>
+
+  <p>
+    Tell us what you're looking for and let's create the perfect outfit.
+  </p>
+
+  <a href="index.html#book" class="btn">Book an Outfit</a>
+
+</section>
+
+</body>
+</html>
