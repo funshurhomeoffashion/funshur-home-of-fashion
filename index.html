@@ -209,28 +209,51 @@ h2{font:normal clamp(2.1rem,4vw,3.5rem)/1.05 Georgia,serif;margin-bottom:18px}.i
 }
 
 @media(max-width:800px){
-  .gallery{
-    grid-template-columns:repeat(2,1fr);
-    gap:24px 12px;
+  .gallery {
+  width: 90%;
+  max-width: 1050px;
+  margin: 40px auto 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+}
+  @media (max-width: 700px) {
+  .gallery {
+    width: 92%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
-  .collection-title{
-    font-size:.95rem;
-  }
-
-  .collection-card img{
-    height:260px;
-  }
-
-  .collection-overlay{
-    opacity:1;
-    padding:30px 10px 10px;
-  }
-
-  .collection-overlay p{
-    font-size:.7rem;
+  .gallery img {
+    max-width: 100%;
+    height: 300px;
   }
 }
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+}
+  
 .cta{background:#c7a45b;text-align:center}.cta h2{max-width:800px;margin:0 auto 18px}.cta p{max-width:650px;margin:0 auto 25px;color:#2a251b}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contactbox{background:#fff;padding:30px}.contactbox p{margin:10px 0;color:#555}.contactbox strong{color:#111}
 form{display:grid;gap:13px}input,select,textarea{width:100%;padding:14px;border:1px solid #ddd;background:#fff;font:inherit}textarea{min-height:130px}
