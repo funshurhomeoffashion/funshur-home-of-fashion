@@ -11,18 +11,9 @@
   --ink:#111;
   --cream:#f5f0e8;
   --gold:#c7a45b;
-  --white:#fff;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
   font-family:Arial,Helvetica,sans-serif;
@@ -31,12 +22,7 @@ body{
   line-height:1.6;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-/* HEADER */
+a{text-decoration:none;color:inherit}
 
 .collection-header{
   background:#111;
@@ -54,9 +40,7 @@ a{
   letter-spacing:1.5px;
 }
 
-.logo span{
-  color:var(--gold);
-}
+.logo span{color:var(--gold)}
 
 .back{
   color:#fff;
@@ -68,10 +52,7 @@ a{
 .back:hover{
   background:var(--gold);
   color:#111;
-  border-color:var(--gold);
 }
-
-/* TITLE */
 
 .collection-intro{
   text-align:center;
@@ -100,8 +81,6 @@ h1{
   color:#666;
 }
 
-/* GALLERY */
-
 .gallery{
   padding:0 7% 90px;
   display:grid;
@@ -117,53 +96,21 @@ h1{
   background:#ddd;
 }
 
-/* BOOKING */
-
 .collection-cta{
-      text-align:center;
-      padding:70px 7%;
-      background:#111;
-    }
-
-    .collection-cta h2{
-      font-size:34px;
-      margin-bottom:15px;
-    }
-
-    .collection-cta p{
-      color:#ccc;
-      margin-bottom:25px;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:14px 24px;
-      background:#fff;
-      color:#111;
-      text-decoration:none;
-      font-weight:bold;
-      border-radius:3px;
-    }
-.collection-footer{
-  background:#000;
-  color:#fff;
+  background:var(--gold);
   text-align:center;
-  padding:45px 7%;
+  padding:70px 7%;
 }
 
-.collection-footer p{
-  color:#aaa;
-  margin-bottom:20px;
+.collection-cta h2{
+  font-family:Georgia,serif;
+  font-size:clamp(2rem,4vw,3.2rem);
+  margin-bottom:15px;
 }
 
-.collection-footer a{
-  display:inline-block;
-  padding:12px 22px;
-  background:#fff;
-  color:#000;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:3px;
+.collection-cta p{
+  max-width:600px;
+  margin:0 auto 25px;
 }
 
 .btn{
@@ -173,8 +120,6 @@ h1{
   padding:13px 24px;
   font-weight:700;
 }
-
-/* FOOTER */
 
 footer{
   background:#0a0a0a;
@@ -188,17 +133,13 @@ footer strong{
   font-family:Georgia,serif;
 }
 
-/* PHONE */
-
 @media(max-width:800px){
 
   .collection-header{
     padding:20px 6%;
   }
 
-  .logo{
-    font-size:.95rem;
-  }
+  .logo{font-size:.95rem}
 
   .back{
     padding:8px 12px;
@@ -218,7 +159,6 @@ footer strong{
   .gallery img{
     height:280px;
   }
-
 }
 </style>
 </head>
@@ -231,15 +171,14 @@ footer strong{
     FUNSHUR <span>HOME OF FASHION</span>
   </a>
 
-  <a class="back" href="index.html#collection-agbada">
+  <a class="back" href="index.html#collection-agbada & grand looks">
   ← Back to Collections
 </a>
- 
 
 </header>
 
-
 <section class="collection-intro">
+
 
   <div class="kicker">
     Funshur Home of Fashion
