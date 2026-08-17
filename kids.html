@@ -11,18 +11,9 @@
   --ink:#111;
   --cream:#f5f0e8;
   --gold:#c7a45b;
-  --white:#fff;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
   font-family:Arial,Helvetica,sans-serif;
@@ -31,12 +22,7 @@ body{
   line-height:1.6;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-/* HEADER */
+a{text-decoration:none;color:inherit}
 
 .collection-header{
   background:#111;
@@ -54,9 +40,7 @@ a{
   letter-spacing:1.5px;
 }
 
-.logo span{
-  color:var(--gold);
-}
+.logo span{color:var(--gold)}
 
 .back{
   color:#fff;
@@ -68,10 +52,7 @@ a{
 .back:hover{
   background:var(--gold);
   color:#111;
-  border-color:var(--gold);
 }
-
-/* TITLE */
 
 .collection-intro{
   text-align:center;
@@ -100,8 +81,6 @@ h1{
   color:#666;
 }
 
-/* GALLERY */
-
 .gallery{
   padding:0 7% 90px;
   display:grid;
@@ -117,97 +96,89 @@ h1{
   background:#ddd;
 }
 
-/* BOOKING */
-
-    .collection-cta{
-      text-align:center;
-      padding:70px 7%;
-      background:#181818;
-    }
-
-    .collection-cta h2{
-      font-size:34px;
-      margin-bottom:15px;
-    }
-
-    .collection-cta p{
-      color:#ccc;
-      margin-bottom:25px;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:14px 24px;
-      background:#fff;
-      color:#111;
-      text-decoration:none;
-      font-weight:bold;
-      border-radius:3px;
-    }
-.collection-footer{
-  background:#000;
-  color:#fff;
+.collection-cta{
+  background:var(--gold);
   text-align:center;
-  padding:45px 7%;
+  padding:70px 7%;
 }
 
-.collection-footer p{
-  color:#aaa;
-  margin-bottom:20px;
+.collection-cta h2{
+  font-family:Georgia,serif;
+  font-size:clamp(2rem,4vw,3.2rem);
+  margin-bottom:15px;
 }
 
-.collection-footer a{
+.collection-cta p{
+  max-width:600px;
+  margin:0 auto 25px;
+}
+
+.btn{
   display:inline-block;
-  padding:12px 22px;
-  background:#fff;
-  color:#000;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:3px;
+  background:#111;
+  color:#fff;
+  padding:13px 24px;
+  font-weight:700;
 }
-    @media(max-width:800px){
-      .gallery{
-        grid-template-columns:repeat(2,1fr);
-        width:92%;
-      }
 
-      .gallery img{
-        height:330px;
-      }
-    }
+footer{
+  background:#0a0a0a;
+  color:#bbb;
+  padding:40px 7%;
+  text-align:center;
+}
 
-    @media(max-width:520px){
-      header{
-        padding:20px 5%;
-      }
+footer strong{
+  color:#fff;
+  font-family:Georgia,serif;
+}
 
-      .hero{
-        padding:60px 5% 35px;
-      }
+@media(max-width:800px){
 
-      .gallery{
-        grid-template-columns:1fr;
-        width:92%;
-      }
+  .collection-header{
+    padding:20px 6%;
+  }
 
-      .gallery img{
-        height:auto;
-        aspect-ratio:4/5;
-      }
-    }
-  </style>
+  .logo{font-size:.95rem}
+
+  .back{
+    padding:8px 12px;
+    font-size:.75rem;
+  }
+
+  .collection-intro{
+    padding:65px 6% 40px;
+  }
+
+  .gallery{
+    padding:0 6% 65px;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
+  .gallery img{
+    height:280px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">FUNSHUR HOME OF FASHION</div>
+<header class="collection-header">
+
+  <a class="logo" href="index.html">
+    FUNSHUR <span>HOME OF FASHION</span>
+  </a>
+
   <a class="back" href="index.html#collection-kids">
   ← Back to Collections
 </a>
+
 </header>
 
-<section class="hero">
+<section class="collection-intro">
+
   <div class="kicker">Our Collection</div>
 
   <h1>Kids</h1>
